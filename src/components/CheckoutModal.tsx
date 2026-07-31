@@ -161,7 +161,7 @@ export default function CheckoutModal({ isOpen, onClose, price }: CheckoutModalP
                       type="submit"
                       className="w-full py-4 mt-2 rounded-xl bg-gradient-to-r from-brand-orange to-brand-amber font-bold text-white text-base hover:opacity-90 transition-all cursor-pointer shadow-lg shadow-brand-orange/20 flex justify-center items-center gap-2"
                     >
-                      Ir al Pago • ${price.toFixed(2)} USD
+                      Ir al Pago • USD {price.toFixed(2)}
                     </button>
                   </form>
                 </motion.div>
@@ -250,7 +250,7 @@ export default function CheckoutModal({ isOpen, onClose, price }: CheckoutModalP
                         </svg>
                         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                           <div className="px-2 py-0.5 rounded bg-brand-orange text-white font-mono text-[9px] font-bold shadow-md">
-                            ${price.toFixed(2)} USD
+                            USD {price.toFixed(2)}
                           </div>
                         </div>
                       </div>
@@ -362,7 +362,7 @@ export default function CheckoutModal({ isOpen, onClose, price }: CheckoutModalP
                       ¡Acceso Liberado! 🎸
                     </h3>
                     <p className="text-sm text-slate-300 px-4">
-                      Hola <strong>{name}</strong>, tu pago de $ {price.toFixed(2)} USD fue aprobado. El material de tu <strong>Biblioteca de Frases</strong> ya ha sido enviado.
+                      Hola <strong>{name}</strong>, tu pago de USD {price.toFixed(2)} fue aprobado. El material de tu <strong>Biblioteca de Frases</strong> ya ha sido enviado.
                     </p>
                   </div>
 

@@ -173,7 +173,7 @@ export default function App() {
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-orange/40 via-white/5 to-brand-amber/40 rounded-2xl p-[1px]">
               <div className="h-full w-full bg-brand-dark rounded-2xl overflow-hidden relative">
                 <img
-                  src="https://i.ibb.co/M56845tH/IMG-1331.webp"
+                  src="https://i.ibb.co/cc779n4f/imagem-espanhol.webp"
                   alt="Biblioteca de Frases Cover Art"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -214,7 +214,7 @@ export default function App() {
             {/* Glowing border effect */}
             <div className="absolute inset-0 bg-gradient-to-tr from-brand-orange to-brand-amber rounded-2xl blur opacity-10 group-hover:opacity-20 transition-opacity duration-300 pointer-events-none" />
             <img
-              src="https://i.ibb.co/rG1vJppw/Chat-GPT-Image-10-de-jul-de-2026-16-21-13.webp"
+              src="https://i.ibb.co/VWfXPby5/Chat-GPT-Image-31-de-jul-de-2026-00-30-19.webp"
               alt="Frases de Ejemplo"
               referrerPolicy="no-referrer"
               className="w-full h-auto object-cover rounded-2xl relative z-10 transition-transform duration-500 hover:scale-[1.01]"
@@ -380,14 +380,13 @@ export default function App() {
 
             <div className="space-y-1">
               <p className="text-slate-400 text-sm font-medium">
-                De <span className="line-through text-red-500 font-bold">$ 25 USD</span> por solo
+                De <span className="line-through text-red-500 font-bold">USD 25</span> por solo
               </p>
               <div className="flex items-center justify-center gap-2">
-                <span className="text-3xl md:text-4xl font-extrabold text-brand-orange">$</span>
-                <span className="text-7xl md:text-8xl font-black font-display text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-100 to-slate-400 leading-none drop-shadow-md px-2">
+                <span className="text-2xl md:text-3xl font-extrabold text-brand-amber font-display">USD</span>
+                <span className="text-7xl md:text-8xl font-black font-display text-transparent bg-clip-text bg-gradient-to-b from-white via-slate-100 to-slate-400 leading-none drop-shadow-md px-1">
                   9.90
                 </span>
-                <span className="text-xl md:text-2xl font-bold text-brand-amber">USD</span>
               </div>
               <p className="text-2xs font-mono text-brand-amber uppercase tracking-widest pt-2">
                 * Pago único. Sin mensualidades.
@@ -416,16 +415,16 @@ export default function App() {
 
             {/* Big Action Button */}
             <div className="space-y-4">
-              <button
-                onClick={() => setIsCheckoutOpen(true)}
-                className="w-full py-5 rounded-2xl bg-gradient-to-r from-brand-orange to-brand-amber font-extrabold text-white text-base tracking-wider uppercase hover:opacity-95 transition-all cursor-pointer shadow-xl shadow-brand-orange/25 flex justify-center items-center gap-2 group relative overflow-hidden"
+              <a
+                href="https://pay.hotmart.com/I106875525I"
+                className="w-full py-5 rounded-2xl bg-gradient-to-r from-brand-orange to-brand-amber font-extrabold text-white text-base tracking-wider uppercase hover:opacity-95 transition-all cursor-pointer shadow-xl shadow-brand-orange/25 flex justify-center items-center gap-2 group relative overflow-hidden text-center"
               >
                 {/* Simple shine effect */}
                 <div className="absolute top-0 -inset-full h-full w-1/2 z-5 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:animate-shine" />
                 
                 QUIERO MI ACCESO AHORA
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </button>
+              </a>
 
               {/* Secure checkout seals */}
               <div className="flex justify-center items-center gap-6 text-[10px] font-mono text-slate-400 pt-2 border-t border-white/[0.04]">
