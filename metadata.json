@@ -1,0 +1,8 @@
+{
+  "name": "Remix Página de Vendas pack frases LATAM",
+  "description": "Una página de ventas de alta conversión para el Pack de Frases para Bajo, con una paleta de colores moderna en tonos dark obsidian y ámbar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
