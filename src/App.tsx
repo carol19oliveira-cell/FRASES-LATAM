@@ -55,6 +55,13 @@ const benefitsData: BenefitCard[] = [
     iconName: "target"
   },
   {
+    id: "tablaturas",
+    title: "TABLATURAS COMPLETAS EN PDF",
+    description: "Todas las frases incluyen su tablatura completa en PDF para que puedas seguir cada nota, digitación y ritmo con claridad.",
+    label: "Material en PDF",
+    iconName: "fileText"
+  },
+  {
     id: "versoes",
     title: "TRES VERSIONES DE ESTUDIO",
     description: "Cada frase incluye:\n\n• Playback para escuchar la aplicación musical.\n• Metrónomo para entender el tiempo exacto de entrada.\n• Versión lenta para facilitar el aprendizaje.",
@@ -186,15 +193,31 @@ export default function App() {
           {/* Headline description paragraph, now below the image */}
           <div className="space-y-6">
             <p className="text-base md:text-lg text-slate-300 max-w-2xl mx-auto font-sans leading-relaxed px-4">
-              Una biblioteca de frases <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-amber font-extrabold">EXCLUSIVAS</span> y de alto impacto para que estudies, mejores y desarrolles líneas de bajo que realmente llamen la atención.
+              Una biblioteca de frases <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-amber font-extrabold">EXCLUSIVAS</span> y de alto impacto con <span className="text-white font-bold">tablaturas completas en PDF</span> para que estudies, mejores y desarrolles líneas de bajo que realmente llamen la atención.
             </p>
+
+            {/* Quick feature pills */}
+            <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-xs md:text-sm font-semibold text-slate-300">
+              <span className="px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.08] flex items-center gap-1.5">
+                <FileText className="w-3.5 h-3.5 text-brand-orange" />
+                Tablaturas en PDF
+              </span>
+              <span className="px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.08] flex items-center gap-1.5">
+                <Music className="w-3.5 h-3.5 text-brand-orange" />
+                Clases en Video
+              </span>
+              <span className="px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.08] flex items-center gap-1.5">
+                <Sliders className="w-3.5 h-3.5 text-brand-orange" />
+                Playbacks + Metrónomo
+              </span>
+            </div>
             
             <div className="flex justify-center items-center">
               <button 
                 onClick={handleScrollToOffer}
                 className="px-8 py-4 rounded-xl bg-gradient-to-r from-brand-orange to-brand-amber font-extrabold text-white text-sm tracking-wide uppercase hover:opacity-90 transition-all cursor-pointer flex items-center justify-center gap-2 shadow-lg shadow-brand-orange/25 group"
               >
-                Asegurar Mi Biblioteca
+                OBTENER MI BIBLIOTECA
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </button>
             </div>
@@ -228,7 +251,7 @@ export default function App() {
           
           <div className="text-center space-y-2">
             <span className="text-xs font-mono uppercase tracking-[0.25em] text-brand-orange">
-              Videos + soporte whatsapp
+              Videos + Tablaturas en PDF + Soporte por WhatsApp
             </span>
             <h2 className="text-4xl md:text-5xl font-display font-extrabold italic tracking-tight text-white uppercase">
               Lo que <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange to-brand-amber px-2">recibes</span>
@@ -395,7 +418,8 @@ export default function App() {
               <div className="pt-6 pb-4 border-t border-white/[0.05] text-left max-w-xs md:max-w-sm mx-auto space-y-2.5">
                 {[
                   "Biblioteca de Frases para Bajo Eléctrico",
-                  "Acceso a la Área de Miembros Exclusiva",
+                  "Tablaturas completas en PDF de todas las frases",
+                  "Acceso al Área de Miembros Exclusiva",
                   "Frases Musicales",
                   "Frases de Impacto",
                   "Frases Rítmicas y Grooves",
